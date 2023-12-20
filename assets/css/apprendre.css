@@ -1,0 +1,45 @@
+img{
+    display: block;
+    width: 100%;
+}
+body{
+    background-color: #f3f4f6;
+}
+.main__container{
+    margin-top: 5rem;
+    padding: 1rem;
+}
+.apprendre__head{
+    text-align: center;
+}
+.apprendre__card{
+    background-color: white;
+    margin-block: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.card__title+p{
+    margin-block: 1rem;
+}
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    .apprendre__container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+    .apprendre__card{
+        width: 45%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 992px) {
+    .apprendre__card{
+        width: 30%;
+    }
+    .main__container{
+        padding: 7rem;
+    }
+}

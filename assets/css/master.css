@@ -1,0 +1,823 @@
+@import url(fonts.css);
+/**********************************************************************************
+******************************** MINI RESET CSS ***********************************
+***********************************************************************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+button{
+    all: unset;
+}
+
+/**********************************************************************************
+****************************** PROPRIETES GLOBALES *********************************
+************************************************************************************/
+:root{
+    --color-primary:#0c29ff;
+    --color-secondary:#000;
+    --font-default:"Futura PT Book";
+}
+
+body{
+    font-family: var(--font-default);
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    overflow-x: hidden;
+}
+
+/************************************************************************************
+********************************** CLASS REUTILISABLE*********************************
+*************************************************************************************/
+.section{
+    padding: 1rem 1.5rem;
+}
+
+.nav__links{
+    display: block;
+    font-size: 1.1rem;
+    padding: .5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 5px;
+}
+.nav__links:hover{
+    background-color: #f3f4f6;
+    color: #0c29ff;
+    border: none;
+}
+
+.nav__links__sub{
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    background-color: var(--color-primary);
+    color: white;
+    cursor: pointer;  
+}
+.nav__btn{
+    padding: .5rem;
+    border-radius: 50px;
+}
+.btn__bans{
+    padding: 1rem;
+    border-radius: 2rem;
+    font-size: 1.5rem;  
+}
+.btn__footer{
+    padding: 1rem;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    text-align: center; 
+}
+.btn__fill{
+    padding: 1rem;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    text-align: center; 
+}
+
+.nav__btn:hover{
+    background-color: #041dd8;
+}
+.title__big{
+    font-family: 'Futura PT Bold';
+    font-size: 3.3rem;
+    padding-block: 2rem;
+}
+.title__sm{
+    font-size: 1.4rem;
+    font-weight: normal;
+}
+.title__md{
+    font-size: 2.3rem;
+    padding-block: 1rem;
+}
+
+.gradientyellowblue{
+    background: rgb(235,185,11);
+    background: linear-gradient(90deg, #FD3C2D  50%, #0C29FF  100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gradientyellopink{
+    background-color: rgb(255,188,1);
+    background: linear-gradient(90deg, rgba(255,188,1,1) 0%, rgba(255,144,165,1) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.visibly{
+    display: none;
+}
+/************************************************************************************
+********************************** NAVBAR SECTION************************************
+*************************************************************************************/
+.djamologo{
+    width: 130px;
+}
+.nav{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+.nav__collapse,.nav__btn,.banniere__img,.banniere_form select,.banniere_form input,.nav__subnav{
+    display: none;
+}
+.nav__container{
+    display: flex;
+    justify-content: space-between;
+}
+.fa-bars{
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, .5);
+}
+.nav__toggle.active + .nav__collapse{
+    display: block;
+}
+.nav__collapse{
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: white;
+    top: 4rem;
+    z-index: 2;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, .1);
+}
+.nav__list{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: .3rem;
+    flex-wrap: wrap;
+}
+.nav__links__sub.active + .nav__subnav{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-block: 1rem;
+    font-size: 1rem;
+}
+.nav__subnav a{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.subnav__icons{
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.1);
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+
+}
+.subnav__title{
+    font-weight: bold;
+}
+.subnav__explain{
+    font-family: 'Futura PT Light';
+}
+.nav__subnav img{
+    width: 32px;
+}
+.positionnement{
+    position: relative;
+}
+/************************************************************************************
+********************************** BANNER SECTION************************************
+*************************************************************************************/
+.banniere{
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    overflow: hidden;
+}
+.banniere__body{
+    margin-block: 1rem;
+}
+
+/************************************************************************************
+******************************* STEPS BY STEPS SECTION*******************************
+*************************************************************************************/
+.steps{
+    background-color: black;
+    color: rgba(255, 255, 255, .5);
+}
+
+.steps h2, .steps i{
+    color: white;
+}
+.steps__items{
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-block: 2rem;
+}
+/************************************************************************************
+********************************** BEST APPLIS SECTION*******************************
+*************************************************************************************/
+.bestapplis{
+    background-color: #f3f4f6;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+.bestapplis__container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem
+}
+.bestapplis__header div{
+    margin-block: 1rem;
+}
+.bestapplis__card{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.bestapplis__card:nth-child(1):hover{
+    background-color: var(--color-primary);
+    color: white;
+}
+.bestapplis__card:nth-child(2):hover{
+    background-color: #ffbc01;
+    color: white;
+}
+.bestapplis__card:nth-child(3):hover{
+    background-color: #fd3c2d;
+    color: white;
+}
+.bestapplis__card:nth-child(4):hover{
+    background-color: #31b67a;
+    color: white;
+}
+.bestapplis__card:nth-child(5):hover{
+    background-color: #ff90a5;
+    color: white;
+}
+.bestapplis__card:nth-child(6):hover{
+    background-color: #000;
+    color: white;
+}
+.bestapplis__card h2{
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+    font-size: 1.3rem;
+}
+.title__icons{
+    font-weight: normal;
+}
+.bestapplis__card p{
+    margin-block-start: 1rem;
+}
+
+
+
+
+.note{
+    border: 1px solid #0c29ff;
+    padding-inline: 1rem;
+    border-radius: 10px;
+}
+.zerofrais ul li:last-child{
+    float: right;
+    margin-right: 1rem;
+}
+.zerofrais button.btn{
+    clear: both;
+    margin-top: 1rem;
+}
+.fa-star,.fa-circle-check{
+    color: rgb(49 182 122);
+}
+/************************************************************************************
+********************************** NO LIMITE SECTION************************************
+*************************************************************************************/
+.nolimite__img,.keepcontrol__img{
+    display: none;
+}
+
+.nolimite{
+    background-color: #f3f4f6;
+    font-size: 1.2rem;
+}
+.keepcontrol{
+    font-size: 1.2rem;
+}
+.nolimite h1,.keepcontrol h1{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.nolimite__text ul li, .keepcontrol__text ul li{
+    margin-block: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+.nolimite__text hr, .keepcontrol__text hr{
+    margin-block: 1rem;
+}
+.nolimite__text p, .keepcontrol__text p{
+    margin-block: 1rem;
+}
+
+/************************************************************************************
+********************************** TESTIMONY SECTION************************************
+*************************************************************************************/
+.head{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.testimony h1{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.fa-star,.fa-circle-check{
+    color: rgb(49 182 122);
+}
+.bold{
+    font-weight: bold;
+    margin-block: 1rem;
+}
+.bold,.bold +p{
+    font-size: 1.5rem;
+}
+.bold +p{
+    margin-block: 1rem;
+}
+.stores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.testimony__head + p{
+    text-align: center;
+    margin-block: 1rem;
+}
+.testimony__items{
+    background-color: #f9fafb;
+    margin-block: 1rem;
+    padding: 1rem;
+}
+.testimony__head{
+    display: flex;
+    align-items: start;
+    text-align: left;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.testimony__head img{
+    border-radius: 50%;
+}
+.testimony__tkinks{
+    text-align: center;
+}
+.testimony__orange{
+    background-color: #ffe9ad;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.testimony__orange > *{
+    margin-block: 1rem;
+}
+.cercle{
+    width: 64px;
+    height: 64px;
+    background-color: green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+}
+.nomclient{
+    font-weight: bold;
+}
+
+/************************************************************************************
+********************************** SECURITE SECTION************************************
+*************************************************************************************/
+.securite__img{
+    display: none;
+}
+.securite{
+    background-color: rgba(0, 0, 0, .1);
+    padding-block: 2rem;
+}
+.securite h1{
+    font-size: 2rem;
+    text-align: center;
+    margin-block: 1rem;
+}
+.securite__icons{
+    background-color: black;
+    padding: .8rem;
+    border-radius: 50%;
+}
+.securite__icons i{
+    color: white;
+    font-size: 1.5rem;
+}
+.securite__items{
+    display: flex;
+    gap: 1rem;
+    align-items: start;
+    margin-block: 1rem;
+}
+.securite__items h2{
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+}
+
+/************************************************************************************
+********************************** FOOTER SECTION************************************
+*************************************************************************************/
+.footer{
+    background-color: black;
+    color: rgba(255, 255, 255, .5);
+}
+.footer__head{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.footer__head h1{
+    color: white;
+    margin-block: 1rem;
+}
+.pays img{
+    width: 16px;
+}
+.plusinfo{
+    text-align: center;
+    font-size: .8rem;
+}
+.plusinfo p:last-child{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.footer__items h2{
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+.footer__items ul{
+    display: flex;
+    flex-direction: column;
+}
+.footer .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer a{
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, .8);
+}
+.societe,.service,.ressource,.pays{
+    width: 45%;
+    margin-block: .5rem;
+}
+.plusinfo .icons__rx{
+    font-size: 1rem;
+}
+.plusinfo p{
+    margin-block: 1rem;
+}
+.pays ul a{
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    align-items: center;
+}
+.copyright{
+    text-align: center;
+    font-size: .9rem;
+    margin-block: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    .bestapplis__header{
+        text-align: center;
+    }
+    .bestapplis__container{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .bestapplis__card{
+        width: 48%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+/************************************************************************************
+********************************** NAVBAR SECTION************************************
+*************************************************************************************/
+    .section{
+        padding: 1rem 2rem;
+    }
+    .title__big{
+        font-size: 4rem;
+    }
+    .nav__toggle{
+        display: none;
+    }
+    .nav__collapse{
+        position: static;
+        box-shadow: none;
+    }
+    .nav__container{
+        align-items: center;
+        gap: .4rem;
+    }
+    .nav__links{
+        border: none;
+        padding: .4rem;
+    }
+    .nav__list{
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        gap: 0;
+    }
+    .nav__subnav{
+        position: absolute;
+        top: 0;
+        z-index: 3;
+        background-color: white;
+        top: 3.5rem;
+        padding: 1rem;
+        left: -5rem;
+        width: 350px;
+        box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2);
+        -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2);
+    }
+    .nav__items{
+        padding-inline: 0rem;
+    }
+/************************************************************************************
+********************************** BANNER SECTION************************************
+*************************************************************************************/
+
+    .banniere{
+        margin-top: 6rem;
+        padding: 0 6rem;
+    }
+    .banniere__container{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .banniere__body{
+        text-align: left;
+    }
+    .gradientyellopink{
+        text-align: left;
+    }
+    .banniere__img{
+        position: relative;
+    }
+    .banniere__img img:first-child{
+        width: 14rem;
+    }
+    .banniere__img img:last-child{
+        width: 10rem;
+        position: absolute;
+        right: -5rem;
+        bottom: 0;
+    }
+    .banniere_form{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: .5rem;
+    }
+    .banniere__control{
+        padding: .5rem 1rem;
+        font-size: 1.1rem;
+        background-color: #dee2e6;
+        border: 1px solid #dee2e6;
+        outline: var(--color-primary);
+    }
+    .btn__bans{
+        padding: .5rem 1rem;
+        font-size: 1.1rem;  
+    }
+
+/************************************************************************************
+******************************STEPS BY STEPS SECTION***********************************
+*************************************************************************************/
+    .steps__container{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        align-items: center;
+    }
+    .steps__items{
+        width: 20rem;
+    }
+    .title__sm{
+        font-size: 1.2rem;
+    }
+    .steps__items{
+        gap: .7rem;
+    }
+
+/************************************************************************************
+********************************** BEST APPLIS SECTION*******************************
+*************************************************************************************/
+    .bestapplis__header{
+        text-align: center;
+    }
+    .bestapplis__container{
+        gap: 2rem;
+        justify-content: center;
+    }
+    .bestapplis__card{
+        width: 26%;
+    }
+
+/************************************************************************************
+********************************** SECTIONS AVEC TWO COLUMNS*************************
+*************************************************************************************/
+    .nolimite, .keepcontrol{
+        padding: 5rem;
+    }
+
+    .nolimte__container,.keepcontrol__container{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    .keepcontrol__container{
+        flex-direction: row-reverse;
+    }
+    .nolimite__img, .keepcontrol__img{
+        display: block;
+    }
+    .nolimite__img img,.keepcontrol__img img{
+        width: 25rem;
+    }
+
+
+
+    .visibly{
+        display: block;
+    }
+    .nav__collapse,.nav__btn,.banniere__img,.banniere_form select,.banniere_form input{
+        display: block;
+    }
+    .securite .container{
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+    .securite__img{
+        display: block;
+    }
+    .societe,.service,.ressource,.pays{
+        width: 15%;
+    }
+    .testimony__container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .testimony__items{
+        width: 30%;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .plusinfo{
+        text-align: left;
+        font-size: .8rem;
+    }
+    .plusinfo p:last-child{
+        justify-content: start;
+    }
+    .footer__items:first-child{
+        width: 32%;
+    }
+    .footer__items ul{
+        padding-top: 2rem;
+        gap: 1rem;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+/************************************************************************************
+********************************** NAVBAR SECTION************************************
+*************************************************************************************/
+    .nav__list{
+        gap: 1rem;
+    }
+    .nav__btn{
+        padding: 1rem;
+    }
+/************************************************************************************
+********************************** BANNER SECTION************************************
+*************************************************************************************/
+    .banniere{
+        padding: 0 7rem;
+    }
+    .banniere__img img:first-child{
+        width: 100%;
+    }
+    .banniere__container{
+        justify-content: center;
+    }
+
+/************************************************************************************
+********************************** BANNER SECTION************************************
+*************************************************************************************/
+    .bestapplis__header{
+        padding-inline: 5rem;
+        padding-block: 2rem;
+    }
+    .title__md{
+        font-size: 4rem;
+        line-height: 3.5rem;
+    }
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+    .section{
+        padding: 1rem 6rem;
+    }
+/************************************************************************************
+********************************** NAVBAR SECTION************************************
+*************************************************************************************/
+    .nav__list{
+        gap: 2rem;
+    }
+    .nav__links{
+        font-size: 1.3rem;
+    }
+
+/************************************************************************************
+********************************** BANNER SECTION************************************
+*************************************************************************************/
+    .banniere{
+        padding: 0 14rem;
+    }
+    .banniere__container{
+        justify-content: center;
+        gap: 1rem;
+    }
+
+
+}
