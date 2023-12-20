@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Djamo Côte d'Ivoire | Djamo Côte d'Ivoire</title>
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/master.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- ********************************************************************************************************
+    ******************************************* NAVBAR SECTION **************************************************
+    *********************************************************************************************************** -->
+    <nav class="section nav">
+        <div class="nav__container">
+            <a href="index.html"><img src="assets/images/logo_noir.png" alt="" class="djamologo"></a>
+            <button class="nav__toggle" onclick="showMenu()"><i class="fa-solid fa-bars"></i></button>
+            <div class="nav__collapse visibly">
+                <ul class="nav__list">
+                    <li class="nav__items"><a href="index.html" class="nav__links">Accueil</a></li>
+                    <li class="nav__items positionnement">
+                        <a href="#" class="nav__links nav__links__sub">
+                            <span>Produits & Services</span>
+                            <span class="chevron"><i class="fa-solid fa-chevron-down"></i></span>
+                        </a>
+                        <ul class="nav__subnav">
+                            <a href="#">
+                                <div class="subnav__icons">
+                                    <img src="assets/images/menu-icon-iban.svg" alt="">
+                                </div>
+                                <div class="subnav__text">
+                                    <div class="subnav__title">Salaire</div>
+                                    <div class="subnav__explain">Recevez votre salaire sur Djamo</div>
+                                </div>
+                            </a>
+    
+                            <a href="#">
+                                <div class="subnav__icons">
+                                    <img src="assets/images/menu-icon-vault.svg" alt="">
+                                </div>
+                                <div class="subnav__text">
+                                    <div class="subnav__title">Coffres</div>
+                                    <div class="subnav__explain">Economisez de l'argent facilement</div>
+                                </div>
+                            </a>
+    
+                            <a href="#">
+                                <div class="subnav__icons">
+                                    <img src="assets/images/menu-icon-transfers.svg" alt="">
+                                </div>
+                                <div class="subnav__text">
+                                    <div class="subnav__title">Transfert</div>
+                                    <div class="subnav__explain">Envoyer de l'argent à qui vous voulez</div>
+                                </div>
+                            </a>
+    
+                            <a href="#">
+                                <div class="subnav__icons">
+                                    <img src="assets/images/menu-icon-card.svg" alt="">
+                                </div>
+                                <div class="subnav__text">
+                                    <div class="subnav__title">Cartes</div>
+                                    <div class="subnav__explain">Payez et retirez partout dans le monde</div>
+                                </div>
+                            </a>
+    
+                            <a href="#">
+                                <div class="subnav__icons">
+                                    <img src="assets/images/icon-plan-plus.png" alt="">
+                                </div>
+                                <div class="subnav__text">
+                                    <div class="subnav__title">Business</div>
+                                    <div class="subnav__explain">Gérez vos dépenses d'entreprise</div>
+                                </div>
+                            </a>
+                        </ul>
+                    </li>
+                    <li class="nav__items"><a href="tarifs.html" class="nav__links">Tarifs</a></li>
+                    <li class="nav__items"><a href="testimony.html" class="nav__links">Témoignages</a></li>
+                    <li class="nav__items"><a href="prelais.html" class="nav__links">Points relais</a></li>
+                    <li class="nav__items"><a href="apprendre.html" class="nav__links">Apprendre</a></li>
+                </ul>
+            </div>
+
+            <button class="btn nav__btn visibly">Ouvrir un compte gratuit</button>
+        </div>
+    </nav>
+    <!-- ********************************************************************************************************
+    ******************************************* BANNIERE SECTION **************************************************
+    *********************************************************************************************************** -->
+    <section class="banniere">
+        <div class="banniere__container">
+            <div class="banniere__text">
+                <h1 class="title__big gradientyellopink">#hellodjamo</h1>
+                <div class="banniere__body">
+                    <p>L'appli pour mieux gérer votre argent.</p>
+                    <p>Ouvrez un compte gratuit maintenant en un clic.</p>
+                </div>
+                <form action="" class="banniere_form">
+                    <select name="" id="" class="banniere__control">
+                        <option value="">255</option>
+                    </select>
+                    <input type="text" name="" id="" placeholder="Votre numéro de telephone" class="banniere__control">
+                    <button class="btn btn__bans">Ouvrir un compte gratuit</button>
+                </form>
+            </div>
+            <div class="banniere__img visibly">
+                <img src="assets/images/tel-banniere.svg" alt="">
+                <img src="assets/images/visa-banierre.webp" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- ********************************************************************************************************
+    ******************************************* STEP BY STEPS SECTION ********************************************
+    *********************************************************************************************************** -->
+
+    <section class="section steps">
+        <div class="steps__container">
+            <div class="steps__items">
+                <div class="steps__img">
+                    <span><i class="fa-solid fa-bolt"></i></span>
+                </div>
+                <div class="steps__body">
+                    <h2 class="title__sm">Ouvrez un compte en 1min</h2>
+                    <p>Créez votre compte et recevez immédiatement une carte virtuelle VISA gratuite.</p>
+                </div>
+            </div>
+
+            <div class="steps__items">
+                <div class="steps__img">
+                    <span><i class="fa-solid fa-credit-card"></i></span>
+                </div>
+                <div class="steps__body">
+                    <h2 class="title__sm">Commandez votre carte physique</h2>
+                    <p>Recevez votre carte en 48h, retirez de l'argent et payez sans frais partout dans le monde.</p>
+                </div>
+            </div>
+
+            <div class="steps__items">
+                <div class="steps__img">
+                    <span><i class="fa-solid fa-mobile-screen-button"></i></span>
+                </div>
+                <div class="steps__body">
+                    <h2 class="title__sm">Accédez aux services via l'appli</h2>
+                    <p>Epargnez, transférez, recevez votre salaire, gérez vos dépenses via l'application mobile.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--*************************************************************************************************************************
+    ******************************************************** BESTAPPLIS SECTION **********************************************
+    *************************************************************************************************************************-->
+    <section class="section bestapplis">
+        <div class="bestapplis__header">
+            <h1 class="title__md text__gradient gradientyellowblue">L'appli qu'il vous faut pour mieux gérer votre argent</h1>
+            <div>
+                <p>Dites adieu à la frustration!</p>
+                <p>Simplifiez votre vie financière en gérant tout votre argent en un seul et même endroit.</p>
+            </div>
+        </div>
+        
+        <div class="bestapplis__container">
+            <div class="bestapplis__card">
+                <h2 class=""><span class="title__icons"><i class="fa-solid fa-building-columns"></i></span>IBAN</h2>
+                <p>
+                    Un IBAN pour recevoir votre salaire ou tout autre virement bancaire
+                </p>
+            </div>
+
+            <div class="bestapplis__card">
+                <h2 class=""><span class="title__icons"><i class="fa-solid fa-toolbox"></i></span>Coffres</h2>
+                <p>
+                    Des coffres pour mettre de l'argent de côté automatiquement
+                </p>
+            </div>
+
+            <div class="bestapplis__card">
+                <h2 class=""><span class="title__icons"><i class="fa-solid fa-arrow-right-arrow-left"></i></span>Transfert</h2>
+                <p>
+                    Des transferts gratuits pour envoyer de l'argent à qui vous voulez
+                </p>
+            </div>
+
+            <div class="bestapplis__card">
+                <h2 class=""><span class="title__icons"><i class="fa-solid fa-briefcase"></i></span>Retraits gratuits</h2>
+                <p>
+                    Des retraits gratuits au guichet automatique pour retirer votre argent
+                </p>
+            </div>
+
+            <div class="bestapplis__card">
+                <h2 class=""><span class="title__icons"><i class="fa-solid fa-chart-simple"></i></span>Gestion des dépenses</h2>
+                <p>
+                    Un outil de gestion pour mieux suivre et contrôler vos dépenses
+                </p>
+            </div>
+
+            <div class="bestapplis__card">
+                <h2 class=""><span class="title__icons"><i class="fa-regular fa-credit-card"></i></span>Une carte VISA</h2>
+                <p>
+                    Une carte VISA pour payer en ligne et partout dans le monde sans frais
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--*************************************************************************************************************************
+    ******************************************************** ZERO FRAIS SECTION **********************************************
+    *************************************************************************************************************************-->
+    <section class="section keepcontrol zerofrais">
+        <div class="keepcontrol__container">
+            <div class="keepcontrol__img">
+                <img src="assets/images/woman-fun.webp" alt="">
+            </div>
+            <div class="keepcontrol__text">
+                <h1>Essayez le zéro frais</h1>
+                <p>Nos tarifs sont transparents, justes et conçus pour vous aider à tirer le meilleur parti de votre argent sans vous ruiner.</p>
+                <hr>
+                <ul>
+                    <li>
+                        <span><i class="fa-solid fa-circle-check"></i></span>
+                        <span>ZÉRO frais de gestion</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-circle-check"></i></span>
+                        <span>ZÉRO frais pour avoir un IBAN</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-circle-check"></i></span>
+                        <span>ZÉRO frais sur les dépôts</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-circle-check"></i></span>
+                        <span>ZÉRO frais sur les transferts</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-circle-check"></i></span>
+                        <span>ZÉRO frais sur les paiements dans la zone UEMOA</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-circle-check"></i></span>
+                        <span>ZÉRO frais sur les retraits dans la zone UEMOA</span>
+                    </li>
+                    <li>
+                        <button class="note"><i class="fa-solid fa-circle-exclamation"></i></button>
+                    </li>
+                </ul>
+                <button class="btn btn__fill">Consulter les tarifs</button>
+            </div>
+        </div>
+    </section>
+
+    <!--*************************************************************************************************************************
+    ******************************************************** ECONOMISEZ SANS EFFOT SECTION **********************************************
+    *************************************************************************************************************************-->
+    <section class="section nolimite">
+        <div class="nolimte__container">
+            <div class="nolimite__img">
+                <img src="assets/images/economisez.svg" alt="">
+            </div>
+            <div class="nolimite__text">
+                <h1>Economisez sans effort</h1>
+                <p>Mettez votre argent en sécurité sans effort grâce aux coffres.</p>
+                <hr>
+                <ul>
+                    <li>
+                        <span><i class="fa-solid fa-circle-check"></i></span>
+                        <span>Economisez facilement avec les virements automatiques et le rendu monnaie</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-circle-check"></i></span>
+                        <span>Retirez votre argent quand vous voulez</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-circle-check"></i></span>
+                        <span>Economisez avec la communauté Djamo grâce aux challenges et remportez des lots.</span>
+                    </li>
+                </ul>
+                <button class="btn btn__fill">Ouvrir un compte gratuit</button>
+            </div>
+        </div>
+    </section>
+
+    <!--*************************************************************************************************************************
+    ******************************************************** GARDER LE CONTROLE **********************************************
+    *************************************************************************************************************************-->
+    <section class="section keepcontrol">
+        <div class="keepcontrol__container">
+            <div class="keepcontrol__img">
+                <img src="assets/images/garder-controle.svg" alt="">
+            </div>
+            <div class="keepcontrol__text">
+                <h1>Gardez le contrôle</h1>
+                <p>Gardez une vision claire de vos dépenses avec des notifications en temps réel et une catégorisation automatique effectuée par Djamo.</p>
+                <hr>
+                <ul>
+                    <li>
+                        <span><i class="fa-solid fa-circle-check"></i></span>
+                        <span>Notification instantanée à chaque transaction</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-circle-check"></i></span>
+                        <span>Accès aux détails des dépenses et au relevé en temps réel, sans frais</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-circle-check"></i></span>
+                        <span>Catégorisation automatique de vos dépenses</span>
+                    </li>
+                </ul>
+                <button class="btn btn__fill">Ouvrir un compte gratuit</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!--*************************************************************************************************************************
+    ******************************************************** NO LIMITE SECTION **********************************************
+    *************************************************************************************************************************-->
+    <section class="section nolimite">
+        <div class="nolimte__container">
+            <div class="nolimite__img">
+                <img src="assets/images/nolimite.svg" alt="">
+            </div>
+            <div class="nolimite__text">
+                <h1>Vivez sans limites</h1>
+                <p>Utilisez votre argent comme bon vous le semble.
+                    Djamo vous connecte au monde entier: paiements, retraits, et transferts, sans limites.</p>
+                <hr>
+                <ul>
+                    <li>
+                        <span><i class="fa-solid fa-circle-check"></i></span>
+                        <span>Payez sans frais en ligne et à l'étranger</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-circle-check"></i></span>
+                        <span>Retirez du cash dans le monde entier sans frais cachés grâce à votre carte Djamo VISA</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-circle-check"></i></span>
+                        <span>Connecté à toutes les banques de la zone UEMOA</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-circle-check"></i></span>
+                        <span>Connecté à tous les Mobile Money en Côte d'Ivoire</span>
+                    </li>
+                </ul>
+                <button class="btn btn__fill">Ouvrir un compte gratuit</button>
+            </div>
+        </div>
+    </section>
+
+ <!--*************************************************************************************************************************
+    ******************************************************** TESTIMONY SECTION **********************************************
+    *************************************************************************************************************************-->
+    <section class="section testimony">
+        <div class="head">
+            <h1>Nos clients nous aiment</h1>
+            <p class="bold">+1.5 millions téléchargements</p>
+            <p>4.7 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+            <p class="stores">
+                <a href="#"><img src="assets/images/appstore.webp" alt="logo apple store"></a>
+                <a href="#"><img src="assets/images/playstore.webp" alt="logo play store"></a>
+                <a href="#"><img src="assets/images/appgallery.webp" alt="logo app galery store"> </a>
+            </p>
+        </div>
+        <p class="testimony__tkinks">Voici ce qu'ils disent</p>
+        <div class="testimony__container">
+            <div class="testimony__items">
+                <div class="testimony__head">
+                    <img src="assets/images/costumer-man.jpeg" alt="">
+                    <div>
+                        <p class="nomclient">Emmanuel K.</p>
+                        <p>Satisfait par la qualité <br> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                    </div>
+                </div>
+                <div>
+                    "Je suis satisfait pour sa qualité et sa rapidité. En moins de 5 minutes j'ai créé mon compte bancaire en ligne et en moins de 5 minutes j'ai pu avoir ma visa 💳 carte au point relais... Merci à Djamo !"
+                </div>
+            </div>
+    
+            <div class="testimony__items">
+                <div class="testimony__head">
+                    <img src="assets/images/constumer-woman.jpeg" alt="">
+                    <div>
+                        <p class="nomclient">Julie G.</p>
+                        <p>Facile à utiliser <br> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                    </div>
+                </div>
+                <div>
+                    "En Utilisant Djamo on se rend compte que l'application est vraiment pratique. N'importe qui comprendra son fonctionnement. et il donne des bonus et des réponses qu'il respecte. 🙏🏾"
+                </div>
+            </div>
+    
+            <div class="testimony__items">
+                <div class="testimony__head">
+                    <span class="cercle"><span>M</span></span>
+                    <div>
+                        <p class="nomclient">Marc Y.</p>
+                        <p>Une belle expérience <br> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                    </div>
+                </div>
+                <div>
+                    "J'ai découvert le monde des paiements en ligne et rattachement de compte avec Djamo. Une belle expérience sans regret. Merci d'avoir démystifier ce milieu avec des frais allégés."
+                </div>
+            </div>
+        </div>
+        <div class="testimony__orange">
+            <p>🎉 Gagnez jusqu'à 100.000 F CFA en invitant vos amis !</p>
+            <p>Recevez 1.000 F pour chaque ami parrainé !</p>
+            <button class="btn">Ouvrir un compte gratuit</button>
+        </div>
+    </section>
+    
+    <!--*************************************************************************************************************************
+        ******************************************************** SECURITE SECTION **************************************************
+        ************************************************************************************************************************* -->
+    <section class="section securite">
+        <h1>Votre sécurité est notre priorité</h1>
+        <div class="container">
+            <div class="securite__text">
+                <div class="securite__items">
+                    <div class="securite__icons">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <div class="securite__desc">
+                        <h2>Votre argent est en sécurité</h2>
+                        <p>Djamo a créé de multiples niveaux de systèmes et de programmes de sécurité pour protéger votre argent et prévenir toute utilisation non autorisée.</p>
+                    </div>
+                </div>
+                <div class="securite__items">
+                    <div class="securite__icons">
+                        <i class="fa-regular fa-credit-card"></i>
+                    </div>
+                    <div class="securite__desc">
+                        <h2>Carte volée ou perdue ?</h2>
+                        <p>Bloquez et débloquez votre carte à l'infini et instantanément depuis l'application. Votre carte est protégée conformément aux règles du plan VISA.</p>
+                    </div>
+                </div>
+                <div class="securite__items">
+                    <div class="securite__icons">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="securite__desc">
+                        <h2>Vos paiements sont sécurisés</h2>
+                        <p>Djamo a créé de multiples niveaux de systèmes et de programmes de sécurité pour protéger votre argent et prévenir toute utilisation non autorisée.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="securite__img">
+                <img src="assets/images/visa.webp" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- *************************************************************************************************************************
+     ******************************************************** FOOTER SECTION **************************************************
+    ************************************************************************************************************************* -->
+    <footer class="section footer">
+        <div class="footer__head">
+            <p>Qu'attendez-vous ?</p>
+            <h1>Reprenez le contrôle de votre argent</h1>
+            <button class="btn btn__footer">Ouvrir un compte gratuit</button>
+        </div>
+        <div class="container">
+            <div class="footer__items plusinfo">
+               <a href="#"><img src="assets/images/logo_blanc.png" alt="" class="djamologo"></a>
+               <p>Si vous souhaitez en savoir plus sur l'entité DJAMO qui vous propose ces services ou si vous avez d'autres questions, veuillez nous contacter via le chat de l'application dans l'application Djamo ou par email à l'adresse support@djamo.ci.</p>
+               <p>Ce site est publié conjointement par DJAMO Côte d'Ivoire et DJAMO Inc. La carte VISA DJAMO est une carte VISA co-brandée émise par notre partenaire BGFIBank Côte d'Ivoire ou Ecobank Côte d'Ivoire .</p>
+               <p>
+                <span class="icons__rx"><i class="fa-brands fa-facebook-f"></i></span>
+                <span class="icons__rx"><i class="fa-brands fa-linkedin-in"></i></span>
+                <span class="icons__rx"><i class="fa-brands fa-twitter"></i></span>
+                <span class="icons__rx"><i class="fa-brands fa-instagram"></i></span>
+                <span class="icons__rx"><i class="fa-brands fa-youtube"></i></span>
+               </p>
+            </div>
+            <div class="footer__items societe">
+                <h2>société</h2>
+                <ul>
+                    <a href="#">à propos</a>
+                    <a href="#">carrières</a>
+                    <a href="#">conditions générales et tarifaires</a>
+                    <a href="#">Politique de confidentialité</a>
+                </ul>
+            </div>
+            <div class="footer__items service">
+                <h2>produits & services</h2>
+                <ul>
+                    <a href="#">coffres</a>
+                    <a href="#">transferts</a>
+                    <a href="#">cartes</a>
+                    <a href="#">IBAN</a>
+                    <a href="#">business</a>
+                </ul> 
+            </div>
+            <div class="footer__items ressource">
+                <h2>ressources</h2>
+                <ul>
+                    <a href="#">tarifs</a>
+                    <a href="#">points relais</a>
+                    <a href="#">apprendre</a>
+                </ul>
+            </div>
+            <div class="footer__items pays">
+                <h2>pays</h2>
+                <ul>
+                    <a href="#"><img src="assets/images/civ-flag.svg" alt=""> <span>Côte d'Ivoire</span></a></a>
+                    <a href="#"><img src="assets/images/sen-flag.svg" alt=""><span>Sénégal</span></a></a>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">© 2020-2023 Djamo Inc.. Tous droits réservés.</p>
+    </footer>
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
