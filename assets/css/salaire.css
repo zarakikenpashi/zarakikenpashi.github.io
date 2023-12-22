@@ -1,0 +1,71 @@
+.main__container{
+    padding: 6rem 0;
+}
+
+.row__normal,.row__reverse{
+    font-size: 1.2rem;
+}
+.row__reverse__pink{
+    background-color: #ffadbc;
+}
+.row__reverse__green{
+    background-color: #4ace93;
+}
+img{
+    display: block;
+    width: 100%;
+}
+.btn__fill{
+    margin-block: 1rem;
+    padding: .5rem;
+}
+
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    .main__container{
+        padding: 8rem 0;
+    }
+    .row__normal, .row__reverse{
+        padding: 5rem;
+    }
+
+    .row__normal__container,.row__reverse__container{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    .row__reverse__container{
+        flex-direction: row-reverse;
+    }
+    .row__normal__img, .row__reverse__img{
+        display: block;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 992px) {
+    .row__normal,.row__reverse{
+        padding-inline: 10rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 1200px) {
+    .main__container{
+        padding: 8rem 0;
+    }
+    .row__normal{
+        padding-inline: 13rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 14000px) {
+    .main__container{
+        padding: 8rem 0;
+    }
+    .row__normal{
+        padding-inline: 13rem;
+    }
+}
